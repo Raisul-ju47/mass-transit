@@ -1,0 +1,36 @@
+.section {
+    margin-top:50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pickup-form {
+    background: #EFEFEF;
+    border-radius: 10px;
+    width: 30%;
+    height: 250px;
+    padding: 10px 0px 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;   
+}
+.form-input {
+    background-color: white;
+    width: 70%;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+.button {
+    text-align: center;
+    background-color: #FF6E40;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 5px 10px 5px 10px;
+    width: 70%;
+}
+.map {
+    height: 450px;
+    width: 600px;
+    border: none;
+}

@@ -1,0 +1,40 @@
+.home {
+    content: "";
+    height: 100vh;
+    background-image: url(../../images/Bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.tickets {
+    margin-top: 300px;
+    height:25vh;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.ticket:hover {
+    cursor: pointer;
+    background-color: aqua;
+    text-decoration: none;
+}
+.ticket {
+    background-color: white;
+    height:100%;
+    width: 23%;
+    border-radius: 10px;
+}
+.ticket img {
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 129px;
+    height: 109px;
+}
+.ticket h2 {
+    font-weight: 700;
+    text-align: center;
+    padding-top: 25px;
+}

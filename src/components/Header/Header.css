@@ -1,0 +1,11 @@
+.header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.header h5 {
+    font-weight: 700;
+}
+.logo {
+    height: 10px;
+    width: 20%;
+}
