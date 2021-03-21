@@ -4,6 +4,16 @@ import { UserContext } from '../../App';
 import './Bike.css';
 
 
+const containerStyle = {
+    width: '400px',
+    height: '400px'
+};
+
+const center = {
+    lat: -3.745,
+    lng: -38.523
+}
+
 const Bike = () => {
 
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
