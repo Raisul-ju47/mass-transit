@@ -14,6 +14,7 @@ import Car from "./components/Car/Car";
 import Bus from "./components/Bus/Bus";
 import Train from "./components/Train/Train";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import SignUp from "./components/SignUp/SignUp";
 
 export const UserContext = createContext();
 
@@ -35,8 +36,14 @@ function App() {
           <Route path="/home">
             <Home/>
           </Route>
-          <PrivateRoute path="/login">
+          <Route path="/login">
             <Login/>
+          </Route>
+          <Route path="/signup">
+            <SignUp/>
+          </Route>
+          <PrivateRoute path="/booking/:bookingId">
+            <Bike/>
           </PrivateRoute>
           <PrivateRoute path="/bike">
             <Bike/>

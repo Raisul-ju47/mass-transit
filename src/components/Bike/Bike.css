@@ -34,3 +34,56 @@
     width: 600px;
     border: none;
 }
+.destination {
+    position: relative;
+    top:-450px;
+}
+.pickup-form-2 {
+    display: none;
+    background: #EFEFEF;
+    border-radius: 10px;
+    width: 30%;
+    height: 350px;
+    padding: 10px 0px 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;   
+}
+@media screen and (max-width: 600px){
+    .section {
+        margin-top:50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .pickup-form {
+        background: #EFEFEF;
+        border-radius: 10px;
+        width: 90%;
+        height: 250px;
+        padding: 10px 0px 10px 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;   
+    }
+    .destination {
+        position: relative;
+        top:-725px;
+        left: 22px
+    }
+    .pickup-form-2 {
+        display: none;
+        background: #EFEFEF;
+        border-radius: 10px;
+        width: 90%;
+        height: 350px;
+        padding: 10px 0px 10px 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;   
+    }
+    .map {
+        margin: 10px auto;
+        width: 400px;
+        border: none;
+        border-radius: 20px;
+    }
+}

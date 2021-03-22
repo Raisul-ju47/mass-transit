@@ -1,11 +1,3 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-}
-.header {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-}
 .form-part{
     border: none;
     background-color: white;
@@ -26,7 +18,7 @@ body {
 
 .login-alternative button{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-weight: 500;
     border: 1px solid gray;
@@ -34,6 +26,4 @@ body {
     width: 100%;
     padding: 5px;
     margin-bottom: 10px;
-    text-align: center;
 }
-
