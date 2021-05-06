@@ -5,14 +5,9 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Login from "./components/Login/Login";
-import Header from "./components/Header/Header";
-import Bike from "./components/Bike/Bike";
-import Car from "./components/Car/Car";
-import Bus from "./components/Bus/Bus";
-import Train from "./components/Train/Train";
+import Booking from "./components/Booking/Booking";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import SignUp from "./components/SignUp/SignUp";
 
@@ -43,19 +38,7 @@ function App() {
             <SignUp/>
           </Route>
           <PrivateRoute path="/booking/:bookingId">
-            <Bike/>
-          </PrivateRoute>
-          <PrivateRoute path="/bike">
-            <Bike/>
-          </PrivateRoute>
-          <PrivateRoute path="/car">
-            <Car/>
-          </PrivateRoute>
-          <PrivateRoute path="/bus">
-            <Bus/>
-          </PrivateRoute>
-          <PrivateRoute path="/train">
-            <Train/>
+            <Booking/>
           </PrivateRoute>
           <Route exact path="/">
             <Home/>

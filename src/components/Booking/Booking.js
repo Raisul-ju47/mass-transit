@@ -1,13 +1,29 @@
-import React, { useContext } from 'react';
-import { Link } from "react-router-dom";
+import React, { useContext, useState } from 'react';
+import { Link, useParams } from "react-router-dom";
 import { UserContext } from '../../App';
-import './Bike.css';
+import './Booking.css';
 import BikeImage from '../../images/Frame.png';
 import People from '../../images/peopleicon.png'
+import fakeData from '../fakeData/fakeData.json';
 
 
 
-const Bike = () => {
+const Booking = () => {
+
+
+    const {bookingId} = useParams();
+    
+
+
+    const url = fakeData;
+    const transitDetails = url.filter(trans => trans.id === bookingId)
+    console.log(transitDetails);
+
+    // const transitDetails = url.filter(transit=> transit.id === bookingId);
+    // const {name, image} = transitDetails[0];
+    // console.log(name)
+
+
 
     const [newUser, setNewUser] = useContext(UserContext);
 
@@ -97,37 +113,37 @@ const Bike = () => {
                         <br/>
                         <h5 style={{color: "white"}}>Dhanmondi</h5>
                     </div>
-                    <div style={{backgroundColor: "white", width: "95%", height: "60px", borderRadius: "10px", padding: "0px 0px 0px 10px", marginTop: "10px", display: "flex", alignItems: "center", justifyContent: "space-around"}}>
-                        <img style={{width: "40px", height: "30px"}} src={BikeImage} alt=""/>
+                    {/* <div style={{backgroundColor: "white", width: "95%", height: "60px", borderRadius: "10px", padding: "0px 0px 0px 10px", marginTop: "10px", display: "flex", alignItems: "center", justifyContent: "space-around"}}>
+                        <img style={{width: "40px", height: "30px"}} src={image} alt=""/>
                         <div style={{display: "flex", alignItems: "center", justifyContent: "space-around", width: "40%"}}>
-                            <p style={{paddingTop: "13px"}}>Bike</p>
+                            <p style={{paddingTop: "13px"}}>{name}</p>
                             <img style={{width: "20px", height: "20px"}} src={People} alt=""/>
                             <p style={{paddingTop: "13px"}}>4</p>
                         </div>
                         <p style={{paddingTop: "13px"}}>$67</p>
-                    </div>
-                    <div style={{backgroundColor: "white", width: "95%", height: "60px", borderRadius: "10px", padding: "0px 0px 0px 10px", marginTop: "10px", display: "flex", alignItems: "center", justifyContent: "space-around"}}>
-                        <img style={{width: "40px", height: "30px"}} src={BikeImage} alt=""/>
+                    </div> */}
+                    {/* <div style={{backgroundColor: "white", width: "95%", height: "60px", borderRadius: "10px", padding: "0px 0px 0px 10px", marginTop: "10px", display: "flex", alignItems: "center", justifyContent: "space-around"}}>
+                        <img style={{width: "40px", height: "30px"}} src={image} alt=""/>
                         <div style={{display: "flex", alignItems: "center", justifyContent: "space-around", width: "40%"}}>
-                            <p style={{paddingTop: "13px"}}>Bike</p>
+                            <p style={{paddingTop: "13px"}}>{name}</p>
                             <img style={{width: "20px", height: "20px"}} src={People} alt=""/>
                             <p style={{paddingTop: "13px"}}>4</p>
                         </div>
                         <p style={{paddingTop: "13px"}}>$67</p>
-                    </div>
-                    <div style={{backgroundColor: "white", width: "95%", height: "60px", borderRadius: "10px", padding: "0px 0px 0px 10px", marginTop: "10px", display: "flex", alignItems: "center", justifyContent: "space-around"}}>
-                        <img style={{width: "40px", height: "30px"}} src={BikeImage} alt=""/>
+                    </div> */}
+                    {/* <div style={{backgroundColor: "white", width: "95%", height: "60px", borderRadius: "10px", padding: "0px 0px 0px 10px", marginTop: "10px", display: "flex", alignItems: "center", justifyContent: "space-around"}}>
+                        <img style={{width: "40px", height: "30px"}} src={image} alt=""/>
                         <div style={{display: "flex", alignItems: "center", justifyContent: "space-around", width: "40%"}}>
-                            <p style={{paddingTop: "13px"}}>Bike</p>
+                            <p style={{paddingTop: "13px"}}>{name}</p>
                             <img style={{width: "20px", height: "20px"}} src={People} alt=""/>
                             <p style={{paddingTop: "13px"}}>4</p>
                         </div>
                         <p style={{paddingTop: "13px"}}>$67</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
     );
 };
 
-export default Bike;
+export default Booking;

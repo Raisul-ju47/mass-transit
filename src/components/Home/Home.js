@@ -20,11 +20,11 @@ const Home = () => {
         <div className="home">
             <Header/>
             <div className="container mt-5 tickets">
-                <Link className="row d-flex justify-content-between tickets" to="/bike" >
+                <div className="row d-flex justify-content-between tickets" to="/booking/${id}" >
                     {
                         transits.map(transit => <Transit key={transit.id} transit={transit}></Transit>)
                     }
-                </Link>
+                </div>
             </div>
         </div>
     );
